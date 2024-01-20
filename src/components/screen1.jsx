@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
-const TEXT_CHANGE_DELAY = 5;
-const NEXT_SCREEN_CHANGE_DELAY = 5;
-const INITIAL_TEXT = 'Hi, Suhaan';
+const TEXT_CHANGE_DELAY = 1;
+const NEXT_SCREEN_CHANGE_DELAY = 1;
+const INITIAL_TEXT = 'Hi Suhaan';
 const NEW_TEXT = 'Its your birthday!';
 
 export default function Screen1({ setCurrentScreen }) {

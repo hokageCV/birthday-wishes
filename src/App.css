@@ -52,6 +52,23 @@ body {
   border-radius: 10px;
 }
 
+.media-screen{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-div{
+  height: 400px;
+  width: 300px;
+}
+.video-div video{
+  width: 100%;
+  height: 100%;
+}
+
 /* ================================== */
 
 .glow {

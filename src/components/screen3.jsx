@@ -8,10 +8,10 @@ export default function Screen3({ setCurrentScreen }) {
     return (
         <div className='screen-container gift-screen'>
             <Tada delay={1000}>
-                <p className='text-blur-bg'>
+                <h3 className='text-blur-bg'>
                     Have a nice day, &nbsp;
                     <span onClick={() => setCurrentScreen(4)}>bye bye 👋</span>
-                </p>
+                </h3>
             </Tada>
             <Confetti width={size.width} height={size.height} />
         </div>

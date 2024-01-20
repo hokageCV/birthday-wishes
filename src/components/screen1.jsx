@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const TEXT_CHANGE_DELAY = 1;
-const NEXT_SCREEN_CHANGE_DELAY = 1;
+const TEXT_CHANGE_DELAY = 5;
+const NEXT_SCREEN_CHANGE_DELAY = 5;
 const INITIAL_TEXT = 'Hi Suhaan';
 const NEW_TEXT = 'Its your birthday!';
 
@@ -26,7 +26,7 @@ export default function Screen1({ setCurrentScreen }) {
 
     return (
         <div className='screen-container'>
-            <h1>{displayText}</h1>
+            <h1 className='text-blur-bg'>{displayText}</h1>
         </div>
     );
 }

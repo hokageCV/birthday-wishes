@@ -1,28 +1,32 @@
-*{
-  --background-image: 100% ;
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+* {
+  --background-image: 100%;
   --gift-size: 150px;
 }
 
-html{
-  background-color: #102a43;
-  color: #f0f4f8;
+html {
+  background-color: #ECEFF4;
+  color: #2E3440;
   box-sizing: border-box;
 }
 
-body{
+body {
   background: url('/src/assets/sonic.svg');
   background-size: var(--background-image);
   background-repeat: repeat;
+
   font-size: 30px;
+  font-family: 'Shantell Sans', cursive;
 }
 
-.screen-container{
+.screen-container {
   width: 80vw;
   height: 80vh;
   text-align: center;
 }
 
-.gift-screen{
+.gift-screen {
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -30,9 +34,16 @@ body{
   align-items: center;
 
 }
-.gift-img{
+
+.gift-img {
   height: var(--gift-size);
   width: var(--gift-size);
+}
+
+.text-blur-bg {
+  backdrop-filter: blur(1.5px);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 640px) {
@@ -40,6 +51,7 @@ body{
     --background-image: 60%;
   }
 }
+
 @media screen and (min-width: 760px) {
   body {
     --background-image: 25%;

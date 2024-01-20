@@ -1,0 +1,18 @@
+html{
+  background-color: #102a43;
+  color: #f0f4f8;
+  box-sizing: border-box;
+}
+
+.screen-container{
+  width: 80vw;
+  height: 80vh;
+  text-align: center;
+}
+
+.gift-screen{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

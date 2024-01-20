@@ -3,6 +3,12 @@
 * {
   --background-image: 100%;
   --gift-size: 150px;
+
+  --glow-primary-color: #EBCB8B;
+  --glow-secondary-color: #90be6d;
+  --glow-text-color: #5E81AC;
+  --glow-accent-color: #88C0D0;
+  --glow-blink-color: #D08770;
 }
 
 html {
@@ -45,6 +51,65 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+
+/* ================================== */
+
+.glow {
+  text-shadow: 0 0 5px var(--glow-primary-color), 0 0 15px var(--glow-primary-color), 0 0 20px var(--glow-primary-color), 0 0 40px var(--glow-primary-color), 0 0 60px var(--glow-secondary-color), 0 0 10px var(--glow-accent-color), 0 0 98px var(--glow-secondary-color);
+  color: var(--glow-text-color);
+  font-family: "Sacramento", cursive;
+  text-align: center;
+
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: var(--glow-blink-color);
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px var(--glow-primary-color), 0 0 15px var(--glow-primary-color), 0 0 20px var(--glow-primary-color), 0 0 40px var(--glow-primary-color), 0 0 60px var(--glow-secondary-color), 0 0 10px var(--glow-accent-color), 0 0 98px var(--glow-secondary-color);
+    color: var(--glow-text-color);
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: var(--glow-blink-color);
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px var(--glow-primary-color), 0 0 15px var(--glow-primary-color), 0 0 20px var(--glow-primary-color), 0 0 40px var(--glow-primary-color), 0 0 60px var(--glow-secondary-color), 0 0 10px var(--glow-accent-color), 0 0 98px var(--glow-secondary-color);
+    color: var(--glow-text-color);
+  }
+}
+
+
+/* ================================== */
 
 @media screen and (min-width: 640px) {
   body {

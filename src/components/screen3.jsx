@@ -2,7 +2,7 @@ export default function Screen3({ setCurrentScreen }) {
     return (
         <div className='screen-container gift-screen'>
             <p>
-                Have a nice day,
+                Have a nice day, &nbsp;
                 <span onClick={() => setCurrentScreen(4)}>bye bye 👋</span>
             </p>
         </div>

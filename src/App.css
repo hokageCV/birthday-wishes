@@ -1,7 +1,19 @@
+*{
+  --background-image: 100% ;
+  --gift-size: 150px;
+}
+
 html{
   background-color: #102a43;
   color: #f0f4f8;
   box-sizing: border-box;
+}
+
+body{
+  background: url('/src/assets/sonic.svg');
+  background-size: var(--background-image);
+  background-repeat: repeat;
+  font-size: 30px;
 }
 
 .screen-container{
@@ -15,4 +27,21 @@ html{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+
+}
+.gift-img{
+  height: var(--gift-size);
+  width: var(--gift-size);
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    --background-image: 60%;
+  }
+}
+@media screen and (min-width: 760px) {
+  body {
+    --background-image: 25%;
+  }
 }

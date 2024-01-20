@@ -1,8 +1,7 @@
-# React + Vite
+## Birthday Wishing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Send your birthday wishes using react
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Usage
+- Update name in `components/screen1.jsx` & `components/screen4.jsx`
+- add personalized background, audio, video in `src/assets`
